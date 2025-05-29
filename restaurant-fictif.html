@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Fourchette du Soleil</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fffdf9; color: #333; }
+    header { background: #b04927; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { font-size: 1.2rem; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
+    .menu-items { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .menu-item { flex: 1 1 calc(33% - 1rem); background: #f8f4f0; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+    .menu-item img { width: 100%; border-radius: 8px; height: 150px; object-fit: cover; }
+    .contact-form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+    .contact-form input, .contact-form textarea { margin: 0.5rem 0; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; }
+    .contact-form button { background: #b04927; color: white; padding: 0.75rem; border: none; border-radius: 4px; cursor: pointer; }
+    footer { text-align: center; background: #eee; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Fourchette du Soleil</h1>
+    <p>Une cuisine maison, un goût authentique</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Notre Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/featured/?salad" alt="Salade Méditerranéenne">
+        <h3>Salade Méditerranéenne</h3>
+        <p>Fraîche et savoureuse, parfaite pour commencer.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/featured/?roast-chicken" alt="Poulet rôti">
+        <h3>Poulet rôti</h3>
+        <p>Accompagné de légumes de saison.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/featured/?lemon-tart" alt="Tarte au citron">
+        <h3>Tarte au citron</h3>
+        <p>Douce et acidulée pour finir en beauté.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>"La Fourchette du Soleil" est un restaurant familial proposant une cuisine maison, inspirée des saveurs méditerranéennes. Chaque plat est préparé avec soin, en utilisant des ingrédients frais et de qualité.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>125 Rue de Provence, 75009 Paris<br>Tel : 01 24 45 57 99</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 La Fourchette du Soleil — Tous droits réservés
+  </footer>
+</body>
+</html>
